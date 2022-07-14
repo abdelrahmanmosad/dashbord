@@ -1,0 +1,49 @@
+<div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-5   text-white min-vh-100 bg-dark w-100 ">
+
+  <a routerLink="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+    <span class="fs-5 d-none d-sm-inline text-danger ">Admin Dashboard</span>
+  </a>
+  <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+    <li class="nav-item">
+      <a routerLink="home" routerLinkActive="active"  class="nav-link align-middle px-0">
+        <i class="fa-solid fa-house"></i> <span class="ms-1 d-none d-sm-inline">Overview</span>
+      </a>
+    </li>
+    <li>
+      <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+        <i class="fa-solid fa-gauge"></i> <span class="ms-1 d-none d-sm-inline">Authuntication</span></a>
+      <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+        <li class="w-100">
+          <a routerLink="/login" routerLinkActive="active" class="nav-link px-0"> <span class="d-none d-sm-inline">Log In</span></a>
+        </li>
+        <li>
+          <a routerLink="/signup" routerLinkActive="active" class="nav-link px-0"> <span class="d-none d-sm-inline">Sign Up</span></a>
+        </li>
+        <li>
+          <a routerLink="/register" routerLinkActive="active" class="nav-link px-0"> <span class="d-none d-sm-inline">Register</span></a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a routerLink="/products" routerLinkActive="active" class="nav-link px-0 align-middle">
+        <i class="fa-solid fa-people-carry-box"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
+    </li>
+  </ul>
+  <hr>
+  <div class="dropdown pb-4">
+    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1"
+      data-bs-toggle="dropdown" aria-expanded="false">
+      <img src="assets/hm.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
+      <span class="d-none d-sm-inline mx-1">H&M Admin</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-light text-small " aria-labelledby="dropdownUser1">
+      <li><a class="dropdown-item" routerLink="#">New project...</a></li>
+      <li><a class="dropdown-item" routerLink="#">Settings</a></li>
+      <li><a class="dropdown-item" routerLink="#">Profile</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" routerLink="#">Sign out</a></li>
+    </ul>
+  </div>
+</div>
